@@ -1,14 +1,1376 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Встигати все</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="about-course-container">
+          <p class="class-course">
+            Експрес-курс <br />
+            <span>від сертифікованого психотерапевта</span>
+          </p>
+          <p class="course-start">старт 11 липня</p>
+        </div>
+        <h1 class="header-title">Встигати все</h1>
+        <p class="header-course-desc">
+          Як позбутися прокрастинації і почати реалізовувати свої цілі вже за
+          тиждень
+        </p>
+        <ul class="header-list list">
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/item-image-01-1x.png 1x,
+                  ./src/img/header/item-image-01-2x.png 2x
+                "
+                width="24"
+                height="24" />
+              <img
+                class="header-item-image"
+                src="./src/img/header/item-image-01-1x.png"
+                alt="emoji"
+                width="24"
+                height="24"
+            /></picture>
+            Підвищена продуктивність вже за 1 тиждень
+          </li>
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/item-image-02-1x.png 1x,
+                  ./src/img/header/item-image-02-2x.png 2x
+                "
+                width="24"
+                height="24" />
+              <img
+                class="header-item-image"
+                src="./src/img/header/item-image-02-1x.png"
+                alt="emoji"
+                width="24"
+                height="24"
+            /></picture>
+            Вільний час  для відпочинку та розвитку
+          </li>
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/item-image-03-1x.png 1x,
+                  ./src/img/header/item-image-03-2x.png 2x
+                "
+                width="24"
+                height="24" />
+              <img
+                class="header-item-image"
+                src="./src/img/header/item-image-03-1x.png"
+                alt="emoji"
+                width="24"
+                height="24"
+            /></picture>
+            Менше стресу,  краще самопочуття
+          </li>
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/item-image-04-1x.png 1x,
+                  ./src/img/header/item-image-04-2x.png 2x
+                "
+                width="24"
+                height="24" />
+              <img
+                class="header-item-image"
+                src="./src/img/header/item-image-04-1x.png"
+                alt="emoji"
+                width="24"
+                height="24"
+            /></picture>
+            Чіткі цілі, потужна мотивація
+          </li>
+        </ul>
+        <div class="header-button-container">
+          <button type="button" data-modal-open class="header-button">
+            Хочу на курс
+          </button>
+          <div class="header-sale-mark">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/header-mark-1x.png 1x,
+                  ./src/img/header/header-mark-2x.png 2x
+                "
+                width="68"
+                height="68" />
+              <img
+                class="sale-mark"
+                src="./src/img/header/header-mark-1x.png"
+                alt="sale"
+                width="68"
+                height="68"
+            /></picture>
+            <p class="sale-number">-85%</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="bonus black">
+      <div class="container">
+        <div class="bonus-container">
+          <p class="bonus-title">
+            Встигніть зареєструватись <span>до кінця доби і заберіть</span>
+          </p>
+          <picture
+            ><source
+              srcset="
+                ./src/img/bonus/bonus-1x.png 1x,
+                ./src/img/bonus/bonus-2x.png 2x
+              "
+              width="218"
+              height="218" />
+            <img
+              class="bonus-image"
+              src="./src/img/bonus/bonus-1x.png"
+              alt="bonus"
+              width="218"
+              height="218"
+          /></picture>
+          <div id="countdown-one" class="countdown">
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="milliseconds countdown-time"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="controll section">
+        <div class="container">
+          <div class="controll-wrapper">
+            <h3 class="controll-title">Візьміть під контроль</h3>
+            <p class="controll-desc">
+              свою прокрастинацію, визначайте важливе та отримуйте більше від
+              життя! Ви зможете досягти своїх цілей, зменшити стрес і
+              насолоджуватися кожним досягненням. Подаруйте собі можливість
+              відчути справжнє задоволення від продуктивності та впевненості в
+              собі.
+            </p>
+          </div>
+          <div class="join-wrapper">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/controll/emoji-image-1x.png 1x,
+                  ./src/img/controll/emoji-image-2x.png 2x
+                "
+                width="155"
+                height="135" />
+              <img
+                class="header-item-image"
+                src="./src/img/controll/emoji-image-1x.png"
+                alt="emoji"
+                width="155"
+                height="135"
+            /></picture>
+            <h3 class="controll-title">
+              Приєднуйтесь до експрес-курсу "Встигати все"
+            </h3>
+            <p class="controll-desc">
+              та почніть змінювати своє життя вже зараз. Курс допоможе вам
+              позбутися відкладання справ на потім і навчить ефективно управляти
+              своїм часом та мотивацією. Перший крок до продуктивності – це ваше
+              рішення пройти наш курс!
+            </p>
+          </div>
+          <div class="header-button-container">
+            <button type="button" data-modal-open class="header-button">
+              Хочу на курс
+            </button>
+            <div class="header-sale-mark">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/header/header-mark-1x.png 1x,
+                    ./src/img/header/header-mark-2x.png 2x
+                  "
+                  width="68"
+                  height="68" />
+                <img
+                  class="sale-mark"
+                  src="./src/img/header/header-mark-1x.png"
+                  alt="sale"
+                  width="68"
+                  height="68"
+              /></picture>
+              <p class="sale-number">-85%</p>
+            </div>
+          </div>
+          <div class="bonus white">
+            <div class="container">
+              <div class="bonus-container">
+                <p class="bonus-title">
+                  Встигніть зареєструватись
+                  <span>до кінця доби і заберіть</span>
+                </p>
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/bonus/bonus-1x.png 1x,
+                      ./src/img/bonus/bonus-2x.png 2x
+                    "
+                    width="218"
+                    height="218" />
+                  <img
+                    class="bonus-image"
+                    src="./src/img/bonus/bonus-1x.png"
+                    alt="bonus"
+                    width="218"
+                    height="218"
+                /></picture>
+                <div id="countdown-two" class="countdown">
+                  <div class="countdown-number">
+                    <span class="minutes countdown-time"></span>
+                  </div>
+                  <div><span class="countdown-doubledot"></span></div>
+                  <div class="countdown-number">
+                    <span class="seconds countdown-time"></span>
+                  </div>
+                  <div><span class="countdown-doubledot"></span></div>
+                  <div class="countdown-number">
+                    <span class="milliseconds countdown-time"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="suitable section">
+        <div class="container">
+          <div class="suitable-title-container">
+            <h2 class="suitable-title">Кому підходить</h2>
+            <p class="suitable-subtitle">експрес-курс?</p>
+          </div>
+          <div class="suitable-wrapper">
+            <h3 class="controll-title">
+              Курс "Встигати все" підходить всім, хто
+            </h3>
+            <p class="controll-desc margin">
+              прагне підвищити свою продуктивність та подолати звичку відкладати
+              справи на потім
+            </p>
+            <p class="controll-desc">
+              Незалежно від вашої професії чи віку, ви знайдете в ньому цінні
+              інструменти та практичні поради, які допоможуть досягти ваших
+              цілей
+            </p>
+          </div>
+          <h3 class="also-suitable-title">Курс також підійде:</h3>
+          <ul class="also-suitable-list list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/suitable/suitable-image-01-1x.png 1x,
+                    ./src/img/suitable/suitable-image-01-2x.png 2x
+                  "
+                  width="90"
+                  height="90" />
+                <img
+                  class="suitable-image"
+                  src="./src/img/suitable/suitable-image-01-1x.png"
+                  alt="memoji"
+                  width="90"
+                  height="90"
+              /></picture>
+              <div class="text-box">
+                <p class="item-title">Фрілансерам та підприємцям</p>
+                <p class="item-text">
+                  Якщо ви часто відкладаєте важливі завдання, відчуваєте
+                  перевантаженість і шукаєте способи краще організувати свій
+                  робочий день, курс допоможе вам розвинути самодисципліну і
+                  структурувати свій час
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/suitable/suitable-image-02-1x.png 1x,
+                    ./src/img/suitable/suitable-image-02-2x.png 2x
+                  "
+                  width="90"
+                  height="90" />
+                <img
+                  class="suitable-image"
+                  src="./src/img/suitable/suitable-image-02-1x.png"
+                  alt="memoji"
+                  width="90"
+                  height="90"
+              /></picture>
+              <div class="text-box">
+                <p class="item-title">Батькам</p>
+                <p class="item-text">
+                  Для тих, хто намагається знайти баланс між роботою, домашніми
+                  обов'язками та особистим часом, курс надасть інструменти для
+                  ефективного управління часом та зниження стресу
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/suitable/suitable-image-03-1x.png 1x,
+                    ./src/img/suitable/suitable-image-03-2x.png 2x
+                  "
+                  width="90"
+                  height="90" />
+                <img
+                  class="suitable-image"
+                  src="./src/img/suitable/suitable-image-03-1x.png"
+                  alt="memoji"
+                  width="90"
+                  height="90"
+              /></picture>
+              <div class="text-box">
+                <p class="item-title">
+                  Людям, які прагнуть особистого розвитку
+                </p>
+                <p class="item-text">
+                  Якщо ви хочете підвищити свою продуктивність, досягати
+                  особистих цілей та жити більш організованим життям, цей курс
+                  допоможе вам на шляху до самовдосконалення
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="author section">
+        <div class="container">
+          <h2 class="author-title">про Автора</h2>
+          <h3 class="author-name">Ірина Прим&#39;як</h3>
+          <ul class="author-list list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/author/item-image-01-1x.png 1x,
+                    ./src/img/author/item-image-01-2x.png 2x
+                  "
+                  width="40"
+                  height="40" />
+                <img
+                  class="author-item-image"
+                  src="./src/img/author/item-image-01-1x.png"
+                  alt="emoji"
+                  width="40"
+                  height="40"
+              /></picture>
+              Я магістр психології, сертифікований психотерапевт узалежнень,
+              коуч, психоаналітик, член Української спілки психотерапевтів,
+              викладач психології
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/author/item-image-02-1x.png 1x,
+                    ./src/img/author/item-image-02-2x.png 2x
+                  "
+                  width="40"
+                  height="40" />
+                <img
+                  class="author-item-image"
+                  src="./src/img/author/item-image-02-1x.png"
+                  alt="emoji"
+                  width="40"
+                  height="40"
+              /></picture>
+              Я провела  близько 5000 годин консультацій.  Та я продовжую
+              вдосконалюватися, адже психотерапія для мене – це покликання, яке
+              вимагає постійного розвитку
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-course section">
+        <div class="container">
+          <h2 class="about-course-title">🤍 <span>про курс</span> 🤍</h2>
+          <ul class="about-course-list list">
+            <li class="list-item">
+              Курс складається  з 7 відео-уроків тривалістю 20-35 хв з
+              детальними поясненнями та прикладами +  практичні завдання
+            </li>
+            <li class="list-item">
+              До кожного уроку ви отримаєте презентації та конспекти уроків для
+              зручного повторення матеріалу та вправи для закріплення знань
+            </li>
+            <li class="list-item">
+              Проходити уроки та вправи ви зможете в зручний для вас час, так як
+              доступ до матеріалів 24/7,  а ще у вас буде  доступ до закритої
+              групи для обговорення та підтримки
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="course-program section">
+        <div class="container">
+          <h2 class="course-program-title">Програма</h2>
+          <div class="faq">
+            <div class="question open isOpen">
+              <div class="question-name">
+                <p class="faq-title">
+                  <span>Урок 1: </span>Розуміння прокрастинації
+                </p>
+                <img
+                  class="question-plus"
+                  src="./src/img/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <ul>
+                  <li>Визначення , причини прокрастинації та її наслідки</li>
+                </ul>
+              </div>
+            </div>
+            <div class="question">
+              <div class="question-name">
+                <p class="faq-title">
+                  <span>Урок 2: </span>Визначення та встановлення цілей
+                </p>
+                <img
+                  class="question-plus"
+                  src="./src/img/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <ul>
+                  <li>
+                    Як правильно формулювати цілі, щоб уникнути прокрастинації.
+                    SMART-методика.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="question">
+              <div class="question-name">
+                <p class="faq-title">
+                  <span>Урок 3: </span>Підвищення мотивації
+                </p>
+                <img
+                  class="question-plus"
+                  src="./src/img/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <ul>
+                  <li>Внутрішня та зовнішня мотивація.</li>
+                  <li>Техніки мотивації</li>
+                  <li>Вправа "5 Чому"</li>
+                </ul>
+              </div>
+            </div>
+            <div class="question">
+              <div class="question-name">
+                <p class="faq-title"><span>Урок 4: </span>Управління часом</p>
+                <img
+                  class="question-plus"
+                  src="./src/img/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <ul>
+                  <li>Тайм-менеджменту для підвищення продуктивності</li>
+                  <li>Як виставити пріоритети</li>
+                  <li>Створення  ефективного розкладу</li>
+                </ul>
+              </div>
+            </div>
+            <div class="question">
+              <div class="question-name">
+                <p class="faq-title">
+                  <span>Урок 5: </span>Психологічні стратегії
+                </p>
+                <img
+                  class="question-plus"
+                  src="./src/img/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <ul>
+                  <li>Виявлення та зміна негативних думок і установок</li>
+                  <li>Техніки релаксації та управління стресом</li>
+                  <li>Самоконтроль і самодисципліна</li>
+                </ul>
+              </div>
+            </div>
+            <div class="question">
+              <div class="question-name">
+                <p class="faq-title"><span>Урок 6: </span>Подолання перешкод</p>
+                <img
+                  class="question-plus"
+                  src="./src/img/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <ul>
+                  <li>
+                    Визначення ситуацій та умов, що спричиняють прокрастинацію
+                  </li>
+                  <li>Створення сприятливого середовища</li>
+                  <li>Техніка "Перший крок"</li>
+                </ul>
+              </div>
+            </div>
+            <div class="question last-question">
+              <div class="question-name">
+                <p class="faq-title">
+                  <span>Урок 7: </span>Підтримка змін та стійкість
+                </p>
+                <img
+                  class="question-plus"
+                  src="./src/img/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <ul>
+                  <li>Формуємо нові звички</li>
+                  <li>
+                    Оцінка прогресу Підтримка мотивації на тривалий термін
+                  </li>
+                  <li>
+                    Стратегії для підтримки мотивації в довгостроковій
+                    перспективі
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header-button-container">
+            <button type="button" data-modal-open class="header-button">
+              Хочу на курс
+            </button>
+            <div class="header-sale-mark">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/program/mark-1x.png 1x,
+                    ./src/img/program/mark-2x.png 2x
+                  "
+                  width="68"
+                  height="68" />
+                <img
+                  class="sale-mark"
+                  src="./src/img/program/mark-1x.png"
+                  alt="sale"
+                  width="68"
+                  height="68"
+              /></picture>
+              <p class="sale-number">-85%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="bonus black">
+        <div class="container">
+          <div class="bonus-container">
+            <p class="bonus-title">
+              Встигніть зареєструватись
+              <span>до кінця доби і заберіть</span>
+            </p>
+            <picture
+              ><source
+                srcset="
+                  ./src/img/bonus/bonus-1x.png 1x,
+                  ./src/img/bonus/bonus-2x.png 2x
+                "
+                width="218"
+                height="218" />
+              <img
+                class="bonus-image"
+                src="./src/img/bonus/bonus-1x.png"
+                alt="bonus"
+                width="218"
+                height="218"
+            /></picture>
+            <div id="countdown-three" class="countdown">
+              <div class="countdown-number">
+                <span class="minutes countdown-time"></span>
+              </div>
+              <div><span class="countdown-doubledot"></span></div>
+              <div class="countdown-number">
+                <span class="seconds countdown-time"></span>
+              </div>
+              <div><span class="countdown-doubledot"></span></div>
+              <div class="countdown-number">
+                <span class="milliseconds countdown-time"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="study section">
+        <div class="container">
+          <div class="study-title-container">
+            <h2 class="study-title">Як відбувається</h2>
+            <p class="study-subtitle">навчання?</p>
+          </div>
+          <div class="study-wrapper">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/study/study-image-1x.png 1x,
+                  ./src/img/study/study-image-2x.png 2x
+                "
+                width="87"
+                height="116" />
+              <img
+                class="study-image"
+                src="./src/img/study/study-image-1x.png"
+                alt="memoji"
+                width="87"
+                height="116"
+            /></picture>
+            <ul class="study-list">
+              <li class="list-item">
+                Після оплати ви отримаєте електронний лист із посиланням на
+                платформу навчання і ви розпочнете працювати над своєю проблемою
+              </li>
+              <li class="list-item">
+                Буде створений спільний чат для спілкування та питань
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="reviews section">
+        <div class="container">
+          <div class="reviews-container">
+            <h2 class="reviews-title">відгуки</h2>
+            <div class="swiper mySwiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-01-1x.png 1x,
+                        ./src/img/reviews/review-01-2x.png 2x
+                      "
+                      width="250"
+                      height="250" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-01-1x.png"
+                      alt="review"
+                      width="250"
+                      height="250"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-02-1x.png 1x,
+                        ./src/img/reviews/review-02-2x.png 2x
+                      "
+                      width="250"
+                      height="250" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-02-1x.png"
+                      alt="review"
+                      width="250"
+                      height="250"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-03-1x.png 1x,
+                        ./src/img/reviews/review-03-2x.png 2x
+                      "
+                      width="250"
+                      height="250" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-03-1x.png"
+                      alt="review"
+                      width="250"
+                      height="250"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-04-1x.png 1x,
+                        ./src/img/reviews/review-04-2x.png 2x
+                      "
+                      width="250"
+                      height="250" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-04-1x.png"
+                      alt="review"
+                      width="250"
+                      height="250"
+                  /></picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture
+                    ><source
+                      srcset="
+                        ./src/img/reviews/review-05-1x.png 1x,
+                        ./src/img/reviews/review-05-2x.png 2x
+                      "
+                      width="250"
+                      height="250" />
+                    <img
+                      class="review-image"
+                      src="./src/img/reviews/review-05-1x.png"
+                      alt="review"
+                      width="250"
+                      height="250"
+                  /></picture>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="hand-move-container">
+              <img
+                src="./src/img/hand-move.svg"
+                width="25"
+                height="25"
+                class="hand-move-icon"
+                alt="hand-move"
+              />
+              <p class="hand-move-text">гортай щоб побачити більше</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="get section">
+        <div class="container">
+          <div class="get-title-container">
+            <h2 class="get-title">Що ви отримаєте після</h2>
+            <p class="get-subtitle">проходження курсу</p>
+          </div>
+          <ul class="get-list list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/get/get-01-1x.png 1x,
+                    ./src/img/get/get-01-2x.png 2x
+                  "
+                  width="36"
+                  height="36" />
+                <img
+                  class="get-image"
+                  src="./src/img/get/get-01-1x.png"
+                  alt="emoji"
+                  width="36"
+                  height="36"
+              /></picture>
+              <span class="item-number">01</span>
+              <p class="item-text">
+                Практичні інструменти для ефективного управління часом та
+                завданнями
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/get/get-02-1x.png 1x,
+                    ./src/img/get/get-02-2x.png 2x
+                  "
+                  width="36"
+                  height="36" />
+                <img
+                  class="get-image"
+                  src="./src/img/get/get-02-1x.png"
+                  alt="emoji"
+                  width="36"
+                  height="36"
+              /></picture>
+              <span class="item-number">02</span>
+              <p class="item-text">
+                Розуміння причин прокрастинації та способів їх подолання
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/get/get-03-1x.png 1x,
+                    ./src/img/get/get-03-2x.png 2x
+                  "
+                  width="36"
+                  height="36" />
+                <img
+                  class="get-image"
+                  src="./src/img/get/get-03-1x.png"
+                  alt="emoji"
+                  width="36"
+                  height="36"
+              /></picture>
+              <span class="item-number">03</span>
+              <p class="item-text">
+                Покращення продуктивності та здатності виконувати поставлені
+                цілі
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/get/get-04-1x.png 1x,
+                    ./src/img/get/get-04-2x.png 2x
+                  "
+                  width="36"
+                  height="36" />
+                <img
+                  class="get-image"
+                  src="./src/img/get/get-04-1x.png"
+                  alt="emoji"
+                  width="36"
+                  height="36"
+              /></picture>
+              <span class="item-number">04</span>
+              <p class="item-text">
+                Зниження рівня стресу і підвищення задоволення від роботи та
+                повсякденного життя
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/get/get-05-1x.png 1x,
+                    ./src/img/get/get-05-2x.png 2x
+                  "
+                  width="36"
+                  height="36" />
+                <img
+                  class="get-image"
+                  src="./src/img/get/get-05-1x.png"
+                  alt="emoji"
+                  width="36"
+                  height="36"
+              /></picture>
+              <span class="item-number">05</span>
+              <p class="item-text">
+                Зміцнення самодисципліни та мотивації для досягнення особистих і
+                професійних успіхів
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/get/get-06-1x.png 1x,
+                    ./src/img/get/get-06-2x.png 2x
+                  "
+                  width="36"
+                  height="36" />
+                <img
+                  class="get-image"
+                  src="./src/img/get/get-06-1x.png"
+                  alt="emoji"
+                  width="36"
+                  height="36"
+              /></picture>
+              <span class="item-number">06</span>
+              <p class="item-text">
+                Підвищена продуктивність: Зможете справлятися з великим обсягом
+                роботи без відчуття перевантаження
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/get/get-07-1x.png 1x,
+                    ./src/img/get/get-07-2x.png 2x
+                  "
+                  width="36"
+                  height="36" />
+                <img
+                  class="get-image"
+                  src="./src/img/get/get-07-1x.png"
+                  alt="emoji"
+                  width="36"
+                  height="36"
+              /></picture>
+              <span class="item-number">07</span>
+              <p class="item-text">
+                Ви зможете чітко формулювати свої цілі та досягати їх
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/get/get-08-1x.png 1x,
+                    ./src/img/get/get-08-2x.png 2x
+                  "
+                  width="36"
+                  height="36" />
+                <img
+                  class="get-image"
+                  src="./src/img/get/get-08-1x.png"
+                  alt="emoji"
+                  width="36"
+                  height="36"
+              /></picture>
+              <span class="item-number">08</span>
+              <p class="item-text">
+                Ви будете мати більше часу для родини, хобі та відпочинку,
+                насолоджуючись кожною миттю
+              </p>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/get/get-09-1x.png 1x,
+                    ./src/img/get/get-09-2x.png 2x
+                  "
+                  width="36"
+                  height="36" />
+                <img
+                  class="get-image"
+                  src="./src/img/get/get-09-1x.png"
+                  alt="emoji"
+                  width="36"
+                  height="36"
+              /></picture>
+              <span class="item-number">09</span>
+              <p class="item-text">
+                Ви відчуєте впевненість у своїх силах та здібностях. Ваше
+                самопочуття покращиться, а життя стане більш гармонійним та
+                задовільним
+              </p>
+            </li>
+          </ul>
+          <div class="header-button-container">
+            <button type="button" data-modal-open class="header-button">
+              Хочу на курс
+            </button>
+            <div class="header-sale-mark">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/header/header-mark-1x.png 1x,
+                    ./src/img/header/header-mark-2x.png 2x
+                  "
+                  width="68"
+                  height="68" />
+                <img
+                  class="sale-mark"
+                  src="./src/img/header/header-mark-1x.png"
+                  alt="sale"
+                  width="68"
+                  height="68"
+              /></picture>
+              <p class="sale-number">-85%</p>
+            </div>
+          </div>
+          <div class="bonus">
+            <div class="container">
+              <div class="bonus-container">
+                <p class="bonus-title">
+                  Встигніть зареєструватись
+                  <span>до кінця доби і заберіть</span>
+                </p>
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/bonus/bonus-1x.png 1x,
+                      ./src/img/bonus/bonus-2x.png 2x
+                    "
+                    width="218"
+                    height="218" />
+                  <img
+                    class="bonus-image"
+                    src="./src/img/bonus/bonus-1x.png"
+                    alt="bonus"
+                    width="218"
+                    height="218"
+                /></picture>
+                <div id="countdown-four" class="countdown">
+                  <div class="countdown-number">
+                    <span class="minutes countdown-time"></span>
+                  </div>
+                  <div><span class="countdown-doubledot"></span></div>
+                  <div class="countdown-number">
+                    <span class="seconds countdown-time"></span>
+                  </div>
+                  <div><span class="countdown-doubledot"></span></div>
+                  <div class="countdown-number">
+                    <span class="milliseconds countdown-time"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="get-desc-wrapper">
+            <p class="get-desc margin">
+              На курс діє  гарантія безумовного повернення коштів протягом 14
+              днів, в випадку, якщо вам щось не сподобається.
+            </p>
+            <p class="get-desc">
+              Цей курс забезпечить вас всім необхідним, щоб ви змогли подолати
+              прокрастинацію, підвищити свою продуктивність та покращити
+              загальне благополуччя. Не чекайте - почніть змінювати своє життя
+              вже сьогодні!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-questions section">
+        <div class="container">
+          <div class="question-title-container">
+            <h2 class="question-title">Залишились</h2>
+            <p class="question-subtitle">питання або заперечення?</p>
+            <picture
+              ><source
+                srcset="
+                  ./src/img/study/study-image-1x.png 1x,
+                  ./src/img/study/study-image-2x.png 2x
+                "
+                width="87"
+                height="116" />
+              <img
+                class="question-title-image"
+                src="./src/img/study/study-image-1x.png"
+                alt="memoji"
+                width="87"
+                height="116"
+            /></picture>
+          </div>
+          <div class="faq-two">
+            <div class="question-two open isOpen">
+              <div class="question-two-name">
+                <p>Чи є обмеження за часом для доступу до матеріалів курсу?</p>
+                <img
+                  class="question-plus"
+                  src="./src/img/questions-red-plus.svg"
+                  alt="+"
+                  width="25"
+                  height="25"
+                />
+              </div>
+              <div class="content-two">
+                <p>Доступ до матеріалів 3 місяці з доступом 24/7</p>
+              </div>
+            </div>
+            <div class="question-two">
+              <div class="question-two-name">
+                <p>"Я не маю часу на проходження курсу"</p>
+                <img
+                  class="question-plus"
+                  src="./src/img/questions-red-plus.svg"
+                  alt="+"
+                  width="25"
+                  height="25"
+                />
+              </div>
+              <div class="content-two">
+                <p>
+                  Курс "Прокрастинація Стоп" спеціально розроблений для зайнятих
+                  людей. Кожен урок триває від 25 до 40 хвилин, і ви можете
+                  проходити його у зручному для вас темпі. Крім того, навчання
+                  допоможе вам краще організувати свій час і знайти більше
+                  вільних годин у вашому розкладі
+                </p>
+              </div>
+            </div>
+            <div class="question-two">
+              <div class="question-two-name">
+                <p>
+                  "Цей курс, мабуть, не допоможе мені, бо я занадто довго
+                  страждаю від прокрастинації"
+                </p>
+                <img
+                  class="question-plus"
+                  src="./src/img/questions-red-plus.svg"
+                  alt="+"
+                  width="25"
+                  height="25"
+                />
+              </div>
+              <div class="content-two">
+                <p>
+                  Мій курс базується на перевірених методах і техніках, які
+                  допомогли багатьом людям подолати прокрастинацію, незалежно
+                  від того, скільки часу вони страждали від цієї проблеми. Ми
+                  починаємо з основ і поступово переходимо до більш складних
+                  технік, щоб забезпечити всебічну підтримку на вашому шляху до
+                  змін
+                </p>
+              </div>
+            </div>
+            <div class="question-two">
+              <div class="question-two-name">
+                <p>
+                  "Мені складно підтримувати мотивацію під час онлайн-навчання"
+                </p>
+                <img
+                  class="question-plus"
+                  src="./src/img/questions-red-plus.svg"
+                  alt="+"
+                  width="25"
+                  height="25"
+                />
+              </div>
+              <div class="content-two">
+                <p>
+                  Відповідь: У курсі "Прокрастинація Стоп" я приділила особливу
+                  увагу технікам підвищення мотивації. Ви навчитеся
+                  використовувати як внутрішню, так і зовнішню мотивацію, що
+                  допоможе вам залишатися на шляху до досягнення ваших цілей.
+                  Крім того, спільнота учасників курсу та я підтримають вас на
+                  кожному етапі
+                </p>
+              </div>
+            </div>
+            <div class="question-two">
+              <div class="question-two-name">
+                <p>"Я вже пробував різні методи, але нічого не допомогло"</p>
+                <img
+                  class="question-plus"
+                  src="./src/img/questions-red-plus.svg"
+                  alt="+"
+                  width="25"
+                  height="25"
+                />
+              </div>
+              <div class="content-two">
+                <p>
+                  Наш курс поєднує в собі різноманітні методи, включаючи
+                  когнітивно-поведінкову терапію, техніки тайм-менеджменту та
+                  психологічні стратегії, що дозволяє знайти саме той підхід,
+                  який працює для вас. Я впевнена, що мій всебічний підхід
+                  допоможе вам знайти ефективне рішення вашої проблеми
+                </p>
+              </div>
+            </div>
+            <div class="question-two">
+              <div class="question-two-name">
+                <p>"Я боюся, що не зможу застосувати знання на практиці"</p>
+                <img
+                  class="question-plus"
+                  src="./src/img/questions-red-plus.svg"
+                  alt="+"
+                  width="25"
+                  height="25"
+                />
+              </div>
+              <div class="content-two">
+                <p>
+                  Курс "Прокрастинація Стоп" побудований таким чином, щоб ви не
+                  тільки отримали теоретичні знання, але й одразу застосовували
+                  їх на практиці. Практичні завдання та вправи допоможуть вам
+                  закріпити нові
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="header-button-container">
+            <button type="button" data-modal-open class="header-button">
+              Хочу на курс
+            </button>
+            <div class="header-sale-mark">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/header/header-mark-1x.png 1x,
+                    ./src/img/header/header-mark-2x.png 2x
+                  "
+                  width="68"
+                  height="68" />
+                <img
+                  class="sale-mark"
+                  src="./src/img/header/header-mark-1x.png"
+                  alt="sale"
+                  width="68"
+                  height="68"
+              /></picture>
+              <p class="sale-number">-85%</p>
+            </div>
+          </div>
+          <div class="bonus">
+            <div class="container">
+              <div class="bonus-container">
+                <p class="bonus-title">
+                  Встигніть зареєструватись
+                  <span>до кінця доби і заберіть</span>
+                </p>
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/bonus/bonus-1x.png 1x,
+                      ./src/img/bonus/bonus-2x.png 2x
+                    "
+                    width="218"
+                    height="218" />
+                  <img
+                    class="bonus-image"
+                    src="./src/img/bonus/bonus-1x.png"
+                    alt="bonus"
+                    width="218"
+                    height="218"
+                /></picture>
+                <div id="countdown-five" class="countdown">
+                  <div class="countdown-number">
+                    <span class="minutes countdown-time"></span>
+                  </div>
+                  <div><span class="countdown-doubledot"></span></div>
+                  <div class="countdown-number">
+                    <span class="seconds countdown-time"></span>
+                  </div>
+                  <div><span class="countdown-doubledot"></span></div>
+                  <div class="countdown-number">
+                    <span class="milliseconds countdown-time"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="deals-list list">
+          <li class="deals-item">
+            <a class="deals-link link" href="" target="_blank" rel="nofollow"
+              >Договір оферта</a
+            >
+          </li>
+          <li class="deals-item">
+            <a class="deals-link link" href="" target="_blank" rel="nofollow"
+              >Політика конфіденційності</a
+            >
+          </li>
+        </ul>
+        <div class="mail-container">
+          <a
+            class="mail-link link"
+            href="@gmail.com"
+            target="_blank"
+            rel="nofollow"
+          >
+            <img
+              src="./src/img/gmail-icon.svg"
+              alt="gmail"
+              width="21"
+              height="16"
+            />
+            <p class="mail-link">@gmail.com</p></a
+          >
+        </div>
+        <p class="footer-fop">ФОП</p>
+        <div class="insta-container">
+          <a
+            class="insta-link link"
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="nofollow"
+            ><img
+              src="./src/img/insta-icon.svg"
+              alt="insta"
+              width="24"
+              height="24"
+            />
+            <p class="insta-name">@instagma</p></a
+          >
+        </div>
+        <div class="disign-creator-container">
+          <a
+            class="disigner-link link"
+            href="https://www.instagram.com/lllcku"
+            target="_blank"
+            rel="nofollow"
+            ><p class="creator-text">Сайт розроблений</p>
+            <img
+              src="./src/img/insta-icon.svg"
+              alt="insta"
+              width="14"
+              height="14"
+            />
+            <p class="creator-text">@lllcku</p></a
+          >
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img
+            src="./src/img/close-modal-icon.svg"
+            width="40"
+            height="40"
+            alt="close"
+          />
+        </button>
+        <div id="kwiga-widget-1721138181000"></div>
+      </div>
+    </div>
+    <script src="./src/js/jquery-3.7.0.min.js" type="module"></script>
+    <script src="./src/js/faq.js" type="module"></script>
+    <script type="module" src="./src/js/timer.js"></script>
+    <script type="module" src="./src/js/swiper.js"></script>
+    <script type="module" src="./src/js/changeDate.js"></script>
+    <script type="module" src="./src/js/js-modal.js"></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1721138181000&uuid=cc2f5ad3-83ad-4068-8571-2904b7a6b24c&producer=https://kwiga.com/"
+    ></script>
+  </body>
 </html>
