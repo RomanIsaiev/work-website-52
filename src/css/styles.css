@@ -333,9 +333,27 @@ img {
   color: #fff;
 }
 
-.bonus-image {
-  margin: 0 auto;
+.bonus-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+
   margin-bottom: 20px;
+}
+
+.bonus-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.bonus.white .bonus-item {
+  background: rgba(70, 70, 70, 0.075);
 }
 
 /* timer */
@@ -1000,7 +1018,7 @@ img {
   flex-direction: column;
   gap: 25px;
 
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .get-list .list-item {
@@ -1049,6 +1067,31 @@ img {
   max-width: 240px;
 }
 
+.price {
+  color: #ffd05a;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+
+  margin-bottom: 15px;
+}
+
+.price span {
+  color: #fff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 110%; /* 33px */
+
+  text-decoration: line-through;
+  text-decoration-color: #bf0000;
+}
+
 .get-desc-wrapper {
   padding: 20px;
   max-width: 310px;
@@ -1072,6 +1115,11 @@ img {
 
 .get-desc.margin {
   margin-bottom: 10px;
+}
+
+.get .header-button {
+  color: #090909;
+  background: linear-gradient(90deg, #fac02d 0%, #ffd676 50%, #fac02d 100%);
 }
 
 /* sect questions */
